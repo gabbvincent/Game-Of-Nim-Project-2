@@ -37,7 +37,7 @@ fmt.Println("----------------------------------------------------")
 
  //game begins
   for x :=1; first >=0 && second >= 0;{
-
+//Users Turn
 if x%2 ==1 { 
   fmt.Println()
 fmt.Println("Pile one =", first)
@@ -60,6 +60,7 @@ second -= inputB
 x++
 turn++
 }
+//Computers Turn
 } else if x%2 !=1 {
   if rand.Intn(2)+1 == 1 {
   
@@ -81,7 +82,7 @@ turn++
 }
 
 }
-
+//End of Game
 if first <=0 && second <=0 && turn%2 ==1 {
   fmt.Println()
   fmt.Println("Game Over! You win!")
